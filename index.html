@@ -10,15 +10,27 @@
 </head>
 
 <body class="m-0 p-0">
-    <div class="container-fluid w-50 my-4">
-        <img src="./images/pngwing.com.png" alt="pokemon-logo" class="img-fluid p-0 m-0">
-    </div>
-
-    <main class="row justify-content-center mx-0" id="muestrainfo">
-        <div id="prueba" class="row g-4 justify-content-center">
+    <header>
+        <div class="container-fluid w-50 my-4">
+            <img src="./images/pngwing.com.png" alt="pokemon-logo" class="img-fluid p-0 m-0">
         </div>
-        <div class="row justify-content-center my-2">
-            <button type="button" class="col-3 btn btn-primary" onclick="next()">Cargar mas pokemones</button>
+    </header>
+
+    <main class="row justify-content-center mx-0" >
+        <div>
+            <select name="filtros" id="filtros" >
+                <option value="">Type</option>
+            </select>
+        </div>
+        <div id="muestrainfo" class="row justify-content-center mx-0">
+            <div id="info-filtros" class="row g-4 justify-content-center">
+
+            </div>
+            <div id="prueba" class="row g-4 justify-content-center">
+            </div>
+            <div class="row justify-content-center my-2">
+                <button type="button" class="col-3 btn btn-primary" id="boton-next" onclick="next()">Cargar mas pokemones</button>
+            </div>
         </div>
     </main>
 
