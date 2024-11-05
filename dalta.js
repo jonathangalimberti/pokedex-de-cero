@@ -26,9 +26,9 @@ function cambioFiltro(valor){
         iniciarPokedex()
     }
     else{
+        infoDevuelta.innerHTML = ""
         prueba.style = "display:none"
         botonNext.style = "display:none"
-
     }
 
     fetch (baseUrl+`/type/${valor}`)
@@ -115,9 +115,7 @@ function iniciarCarga(pokemonSeleccionado) {
                     <p class="card-text">${data.abilities[0].ability.name}</p>
                     <p class="card-text">${data.abilities[1].ability.name}</p>
                 </div>
-        </div>
- `
- ; 
+        </div> `; 
 })
 }
 
