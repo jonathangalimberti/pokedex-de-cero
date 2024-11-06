@@ -10,7 +10,7 @@
 </head>
 
 <body class="m-0 p-0">
-    <header>
+    <header id="start">
         <div class="container-fluid w-50 my-4">
             <button onclick="location.reload()" class="btn btn-link">
                 <img src="./images/pngwing.com.png" alt="pokemon-logo" class="img-fluid p-0 m-0">
@@ -20,7 +20,7 @@
 
     <main class="row justify-content-center mx-0" >
         <div>
-            <select name="filtros" id="filtros" class="form-select-lg"  >
+            <select name="filtros" id="filtros" class="form-select-lg ms-5"  >
                 <option value="">Type</option>
             </select>
         </div>
@@ -35,6 +35,10 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <a href="#start" class="btn btn-primary rounded-5 position-fixed bottom-0 end-0 container p-0 me-3" style="max-width: 75px;"> <img src="./images/arrow.png" alt="" class="img-fluid p-3"> </a>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
